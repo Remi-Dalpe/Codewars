@@ -1,7 +1,7 @@
 # Progress
 ### Rank:6 kyu
-### Honor:93
-### Total Completed Kata:9
+### Honor:125
+### Total Completed Kata:10
 ## Languages:
 ### Total Languages Trained:1
 ### Highest Trained:JavaScript (6 kyu)
