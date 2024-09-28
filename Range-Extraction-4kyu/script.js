@@ -1,34 +1,5 @@
 'use strict';
 
-function solution(list) {
-  let result = [];
-  let rangeStart = list[0];
-  let rangeEnd = list[0];
+// [-10, -9, -8, -6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20];
 
-  for (let i = 1; i < list.length; i++) {
-    if (list[i] === rangeEnd + 1) {
-      rangeEnd = list[i];
-    } else {
-      if (rangeEnd - rangeStart >= 2) {
-        result.push(`${rangeStart}-${rangeEnd}`);
-      } else if (rangeEnd - rangeStart === 1) {
-        result.push(`${rangeStart},${rangeEnd}`);
-      } else {
-        result.push(`${rangeStart}`);
-      }
-      rangeStart = list[i];
-      rangeEnd = list[i];
-    }
-  }
-
-  // Handle the final range or single number
-  if (rangeEnd - rangeStart >= 2) {
-    result.push(`${rangeStart}-${rangeEnd}`);
-  } else if (rangeEnd - rangeStart === 1) {
-    result.push(`${rangeStart},${rangeEnd}`);
-  } else {
-    result.push(`${rangeStart}`);
-  }
-
-  return result.join(',');
-}
+function solution(list) {}
